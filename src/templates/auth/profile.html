@@ -1,0 +1,74 @@
+{% extends 'auth/base.html' %}
+
+{% block content %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .profile-info {
+        margin-bottom: 20px;
+    }
+    
+    .profile-info label {
+        font-weight: bold;
+    }
+    
+    .profile-info p {
+        margin: 5px 0;
+    }
+    
+    .profile-info p span {
+        font-weight: normal;
+    }
+    
+    .button-container {
+        text-align: center;
+    }
+    
+    .edit-button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .edit-button:hover {
+        background-color: #45a049;
+    }
+</style>
+<body>
+
+<div class="container">
+    <h2>Профиль</h2>
+    <div class="profile-info">
+        <label>Имя пользователя:</label>
+        <p><span>Ваше имя</span></p>
+        <label>Email:</label>
+        <p><span>example@example.com</span></p>
+    </div>
+    <div class="button-container">
+        <button class="edit-button">Редактировать профиль</button>
+    </div>
+</div>
+{% endblock %}
